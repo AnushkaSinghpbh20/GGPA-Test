@@ -1,0 +1,90 @@
+[2026-03-23 03:06:18] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 03:06:18] C:\xampp\htdocs\TPO_PROJECT\admin\manage_companies.php:13 TrainingSystem.INFO: manage_companies.php accessed 
+[2026-03-23 03:08:31] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 03:08:31] C:\xampp\htdocs\TPO_PROJECT\admin\manage_companies.php:13 TrainingSystem.INFO: manage_companies.php accessed 
+[2026-03-23 03:08:34] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 03:08:34] C:\xampp\htdocs\TPO_PROJECT\admin\manage_companies.php:13 TrainingSystem.INFO: manage_companies.php accessed 
+[2026-03-23 03:08:34] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 03:08:34] C:\xampp\htdocs\TPO_PROJECT\admin\manage_companies.php:13 TrainingSystem.INFO: manage_companies.php accessed 
+[2026-03-23 03:09:03] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 03:09:03] C:\xampp\htdocs\TPO_PROJECT\admin\manage_events.php:13 TrainingSystem.INFO: manage_events.php accessed 
+[2026-03-23 10:48:59] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 10:48:59] C:\xampp\htdocs\TPO_PROJECT\admin\manage_placement.php:12 TrainingSystem.INFO: admin_dashboard.php accessed {"admin":"admin"}
+[2026-03-23 10:52:38] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 10:52:38] C:\xampp\htdocs\TPO_PROJECT\admin\manage_placement.php:12 TrainingSystem.INFO: admin_dashboard.php accessed {"admin":"admin"}
+[2026-03-23 11:05:24] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:05:24] C:\xampp\htdocs\TPO_PROJECT\admin\upload_student_data.php:6 TrainingSystem.INFO: Student upload page accessed 
+[2026-03-23 11:05:31] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:05:31] C:\xampp\htdocs\TPO_PROJECT\admin\download_student_sample.php:8 TrainingSystem.INFO: CSV download request received {"file":"/../uploads/student_registration/done/sample_file.csv"}
+[2026-03-23 11:05:31] C:\xampp\htdocs\TPO_PROJECT\admin\download_student_sample.php:33 TrainingSystem.ERROR: CSV file not found {"file":"/../uploads/student_registration/done/sample_file.csv"}
+[2026-03-23 11:06:35] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:06:35] C:\xampp\htdocs\TPO_PROJECT\admin\download_student_sample.php:8 TrainingSystem.INFO: CSV download request received {"file":"/uploads/student_registration/done/sample_file.csv"}
+[2026-03-23 11:06:35] C:\xampp\htdocs\TPO_PROJECT\admin\download_student_sample.php:33 TrainingSystem.ERROR: CSV file not found {"file":"/uploads/student_registration/done/sample_file.csv"}
+[2026-03-23 11:06:39] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:06:39] C:\xampp\htdocs\TPO_PROJECT\admin\upload_student_data.php:6 TrainingSystem.INFO: Student upload page accessed 
+[2026-03-23 11:06:41] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:06:41] C:\xampp\htdocs\TPO_PROJECT\admin\download_student_sample.php:8 TrainingSystem.INFO: CSV download request received {"file":"/uploads/student_registration/done/sample_file.csv"}
+[2026-03-23 11:06:41] C:\xampp\htdocs\TPO_PROJECT\admin\download_student_sample.php:33 TrainingSystem.ERROR: CSV file not found {"file":"/uploads/student_registration/done/sample_file.csv"}
+[2026-03-23 11:06:55] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:06:55] C:\xampp\htdocs\TPO_PROJECT\admin\upload_student_data.php:6 TrainingSystem.INFO: Student upload page accessed 
+[2026-03-23 11:09:45] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:09:45] C:\xampp\htdocs\TPO_PROJECT\admin\upload_student_data.php:6 TrainingSystem.INFO: Student upload page accessed 
+[2026-03-23 11:09:46] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:09:46] C:\xampp\htdocs\TPO_PROJECT\admin\download_student_sample.php:8 TrainingSystem.INFO: CSV download request received {"file":"/uploads/student_registration/done/sample_file.csv"}
+[2026-03-23 11:09:46] C:\xampp\htdocs\TPO_PROJECT\admin\download_student_sample.php:33 TrainingSystem.ERROR: CSV file not found {"file":"/uploads/student_registration/done/sample_file.csv"}
+[2026-03-23 11:09:52] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:09:52] C:\xampp\htdocs\TPO_PROJECT\admin\upload_student_data.php:6 TrainingSystem.INFO: Student upload page accessed 
+[2026-03-23 11:09:55] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:09:55] C:\xampp\htdocs\TPO_PROJECT\admin\download_student_sample.php:8 TrainingSystem.INFO: CSV download request received {"file":"/uploads/student_registration/done/sample_file.csv"}
+[2026-03-23 11:09:55] C:\xampp\htdocs\TPO_PROJECT\admin\download_student_sample.php:33 TrainingSystem.ERROR: CSV file not found {"file":"/uploads/student_registration/done/sample_file.csv"}
+[2026-03-23 11:17:55] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:17:55] C:\xampp\htdocs\TPO_PROJECT\admin\download_student_sample.php:8 TrainingSystem.INFO: CSV download request received {"file":"/uploads/student_registration/done/sample_file.csv"}
+[2026-03-23 11:17:55] C:\xampp\htdocs\TPO_PROJECT\admin\download_student_sample.php:33 TrainingSystem.ERROR: CSV file not found {"file":"/uploads/student_registration/done/sample_file.csv"}
+[2026-03-23 11:18:00] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:18:00] C:\xampp\htdocs\TPO_PROJECT\admin\upload_student_data.php:6 TrainingSystem.INFO: Student upload page accessed 
+[2026-03-23 11:18:22] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:18:22] C:\xampp\htdocs\TPO_PROJECT\admin\upload_student_data.php:6 TrainingSystem.INFO: Student upload page accessed 
+[2026-03-23 11:18:24] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:18:24] C:\xampp\htdocs\TPO_PROJECT\admin\upload_student_data.php:6 TrainingSystem.INFO: Student upload page accessed 
+[2026-03-23 11:18:26] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:18:26] C:\xampp\htdocs\TPO_PROJECT\admin\download_student_sample.php:8 TrainingSystem.INFO: CSV download request received {"file":"/uploads/student_registration/done/sample_file.csv"}
+[2026-03-23 11:18:26] C:\xampp\htdocs\TPO_PROJECT\admin\download_student_sample.php:33 TrainingSystem.ERROR: CSV file not found {"file":"/uploads/student_registration/done/sample_file.csv"}
+[2026-03-23 11:18:57] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:18:57] C:\xampp\htdocs\TPO_PROJECT\admin\upload_student_data.php:6 TrainingSystem.INFO: Student upload page accessed 
+[2026-03-23 11:18:59] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:18:59] C:\xampp\htdocs\TPO_PROJECT\admin\download_student_sample.php:8 TrainingSystem.INFO: CSV download request received {"file":"/../uploads/student_registration/done/sample_file.csv"}
+[2026-03-23 11:18:59] C:\xampp\htdocs\TPO_PROJECT\admin\download_student_sample.php:33 TrainingSystem.ERROR: CSV file not found {"file":"/../uploads/student_registration/done/sample_file.csv"}
+[2026-03-23 11:21:34] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:21:34] C:\xampp\htdocs\TPO_PROJECT\admin\upload_student_data.php:6 TrainingSystem.INFO: Student upload page accessed 
+[2026-03-23 11:21:35] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:21:35] C:\xampp\htdocs\TPO_PROJECT\admin\upload_student_data.php:6 TrainingSystem.INFO: Student upload page accessed 
+[2026-03-23 11:21:36] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:21:36] C:\xampp\htdocs\TPO_PROJECT\admin\upload_student_data.php:6 TrainingSystem.INFO: Student upload page accessed 
+[2026-03-23 11:21:37] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:21:37] C:\xampp\htdocs\TPO_PROJECT\admin\download_student_sample.php:8 TrainingSystem.INFO: CSV download request received {"file":"../uploads/student_registration/done/sample_file.csv"}
+[2026-03-23 11:21:37] C:\xampp\htdocs\TPO_PROJECT\admin\download_student_sample.php:14 TrainingSystem.INFO: CSV file found, starting download {"file":"../uploads/student_registration/done/sample_file.csv"}
+[2026-03-23 11:21:37] C:\xampp\htdocs\TPO_PROJECT\admin\download_student_sample.php:25 TrainingSystem.INFO: CSV file downloaded successfully {"file":"../uploads/student_registration/done/sample_file.csv"}
+[2026-03-23 11:22:42] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:22:42] C:\xampp\htdocs\TPO_PROJECT\admin\manage_workshop.php:14 TrainingSystem.INFO: manage_workshop.php accessed {"admin":"admin"}
+[2026-03-23 11:23:22] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:23:22] C:\xampp\htdocs\TPO_PROJECT\admin\manage_workshop.php:14 TrainingSystem.INFO: manage_workshop.php accessed {"admin":"admin"}
+[2026-03-23 11:23:25] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:23:25] C:\xampp\htdocs\TPO_PROJECT\admin\manage_workshop.php:14 TrainingSystem.INFO: manage_workshop.php accessed {"admin":"admin"}
+[2026-03-23 11:23:31] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:23:31] C:\xampp\htdocs\TPO_PROJECT\admin\manage_companies.php:13 TrainingSystem.INFO: manage_companies.php accessed 
+[2026-03-23 11:23:52] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:23:52] C:\xampp\htdocs\TPO_PROJECT\admin\manage_placement.php:12 TrainingSystem.INFO: admin_dashboard.php accessed {"admin":"admin"}
+[2026-03-23 11:23:56] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:23:56] C:\xampp\htdocs\TPO_PROJECT\admin\manage_events.php:13 TrainingSystem.INFO: manage_events.php accessed 
+[2026-03-23 11:23:58] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:23:58] C:\xampp\htdocs\TPO_PROJECT\admin\manage_faculty.php:13 TrainingSystem.INFO: manage_faculty.php accessed 
+[2026-03-23 11:24:01] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:24:01] C:\xampp\htdocs\TPO_PROJECT\admin\manage_gallery.php:13 TrainingSystem.INFO: manage_gallery.php accessed 
+[2026-03-23 11:24:05] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:24:05] C:\xampp\htdocs\TPO_PROJECT\admin\manage_announcement.php:12 TrainingSystem.INFO: admin_notices.php accessed 
+[2026-03-23 11:24:30] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:24:30] C:\xampp\htdocs\TPO_PROJECT\admin\upload_survey_data.php:11 TrainingSystem.INFO: Upload page accessed 
+[2026-03-23 11:24:33] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:24:33] C:\xampp\htdocs\TPO_PROJECT\admin\upload_student_data.php:6 TrainingSystem.INFO: Student upload page accessed 
+[2026-03-23 11:24:46] C:\xampp\htdocs\TPO_PROJECT\logger.php:36 TrainingSystem.INFO: Logger initialized successfully 
+[2026-03-23 11:24:46] C:\xampp\htdocs\TPO_PROJECT\admin\session_management.php:6 TrainingSystem.INFO: SessionManagement page opened 
