@@ -1,0 +1,557 @@
+
+CREATE TABLE `admins` (
+  `id` int(11) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `admins`
+--
+
+INSERT INTO `admins` (`id`, `username`, `password`) VALUES
+(1, 'admin', '827ccb0eea8a706c4c34a16891f84e7b');
+
+
+CREATE TABLE `events` (
+  `event_id` int(11) NOT NULL,
+  `event_name` varchar(200) DEFAULT NULL,
+  `description` text DEFAULT NULL,
+  `image` varchar(200) DEFAULT NULL,
+  `link` varchar(200) DEFAULT NULL,
+  `event_date` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+CREATE TABLE `faculty` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `designation` varchar(100) DEFAULT NULL,
+  `email` varchar(100) NOT NULL,
+  `department` varchar(100) DEFAULT NULL,
+  `date_of_joining` date NOT NULL,
+  `experience` varchar(50) DEFAULT NULL,
+  `qualification` varchar(100) DEFAULT NULL,
+  `status` enum('Active','Transferred','Retired') DEFAULT 'Active',
+  `photo` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+
+CREATE TABLE `gallery` (
+  `id` int(11) NOT NULL,
+  `folder_name` varchar(100) DEFAULT NULL,
+  `image_name` varchar(255) DEFAULT NULL,
+  `upload_time` timestamp NOT NULL DEFAULT current_timestamp(),
+  `related_id` int(11) DEFAULT NULL,
+  `related_type` varchar(50) DEFAULT NULL,
+  `status` varchar(20) NOT NULL DEFAULT 'Active'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+
+CREATE TABLE `gallery` (
+  `id` int(11) NOT NULL,
+  `folder_name` varchar(100) DEFAULT NULL,
+  `image_name` varchar(255) DEFAULT NULL,
+  `upload_time` timestamp NOT NULL DEFAULT current_timestamp(),
+  `related_id` int(11) DEFAULT NULL,
+  `related_type` varchar(50) DEFAULT NULL,
+  `status` varchar(20) NOT NULL DEFAULT 'Active'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+
+CREATE TABLE `government_orders` (
+  `id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `file_path` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `government_orders`
+--
+
+INSERT INTO `government_orders` (`id`, `title`, `file_path`) VALUES
+(2, 'Janhit Gurantee Yojna', 'uploads/1773755625_JanhitguranteeAdhiniyam.pdf'),
+(4, 'Fee Structure', 'uploads/1773756160_UpdatedFeeStructure.08'),
+(5, 'Equivalency', 'uploads/1773756343_1773754566_MadhyamicShikshaDeclaration.jpg'),
+(8, 'fee', 'images/1773905500_MadhyamicShikshaDeclaration.jpg'),
+(9, 'enafsc,s', 'images/1773927201_1773905500_MadhyamicShikshaDeclaration.jpg');
+
+
+
+CREATE TABLE `notices` (
+  `id` int(11) NOT NULL,
+  `notice_heading` varchar(255) NOT NULL,
+  `type` enum('General','Workshop','Placement') NOT NULL DEFAULT 'General',
+  `publish_date` date NOT NULL,
+  `expiry_date` date NOT NULL,
+  `google_drive_link` varchar(500) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `notices`
+--
+
+INSERT INTO `notices` (`id`, `notice_heading`, `type`, `publish_date`, `expiry_date`, `google_drive_link`) VALUES
+(1, 'Orientation Workshop (All Branches) on 12 Sept, 10:00 AM', 'General', '2025-09-10', '2099-12-31', NULL),
+(2, 'workshop 10 am', 'Workshop', '2026-02-15', '2026-02-17', ''),
+(3, 'placement drive ', 'Placement', '2026-02-23', '2026-02-24', ''),
+(4, 'hostel allotment list', 'General', '2026-02-13', '2026-02-16', ''),
+(5, 'Orientiation workshop', 'Workshop', '2026-02-20', '2026-02-24', 'https://drive.google.com/file/d/1AbcXYZ123/view?usp=sharing'),
+(6, 'workshop 10 am', 'Workshop', '2026-02-25', '2026-03-03', 'https://drive.google.com/file/d/1MfDVd98vfulyl4xaqVzjZEA7xZidA60J/view?usp=sharing'),
+(7, 'placement drive ', 'Placement', '2026-03-17', '2026-03-20', 'https://drive.google.com/file/d/1AbcXYZ123/view?usp=sharing'),
+(8, 'hostel allotment list', 'General', '2026-03-16', '2026-03-26', 'https://drive.google.com/file/d/1AbcXYZ123/view?usp=sharing');
+
+
+CREATE TABLE `placement` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `company` varchar(100) NOT NULL,
+  `package` varchar(50) NOT NULL,
+  `image_url` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+CREATE TABLE `placements` (
+  `id` int(11) NOT NULL,
+  `company_id` int(11) DEFAULT NULL,
+  `company` varchar(100) NOT NULL,
+  `branch` varchar(100) NOT NULL,
+  `description` text NOT NULL,
+  `date` date NOT NULL,
+  `time` varchar(50) NOT NULL,
+  `venue` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+
+INSERT INTO `placements` (`id`, `company_id`, `company`, `branch`, `description`, `date`, `time`, `venue`) VALUES
+(1, 5, 'Kamadgiri Software Solutions', '', '', '2026-01-20', '', 'Programming Lab'),
+(2, 12, 'APSD Innovation Infotech Pvt. Ltd.', '', '', '2026-02-05', '', 'Programming Lab'),
+(3, 6, 'Arcane Programming Infotech', '', '', '2026-02-12', '', 'Programming Lab'),
+(4, 10, 'Mecatredz Technology Pvt Ltd Lucknow', '', '', '2026-02-20', '', 'Programming Lab');
+
+
+CREATE TABLE `placement_faculty` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `designation` varchar(100) NOT NULL,
+  `experience` int(11) NOT NULL,
+  `image_url` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+
+CREATE TABLE `workshops` (
+  `id` int(11) NOT NULL,
+  `title` varchar(100) NOT NULL,
+  `branch` varchar(50) NOT NULL,
+  `description` text DEFAULT NULL,
+  `date` date NOT NULL,
+  `time` varchar(50) NOT NULL,
+  `venue` varchar(100) NOT NULL,
+  `company` varchar(100) DEFAULT NULL,
+  `image` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `workshops`
+--
+
+INSERT INTO `workshops` (`id`, `title`, `branch`, `description`, `date`, `time`, `venue`, `company`, `image`) VALUES
+(1, 'HTML, CSS, JavaScript', '', '', '2026-01-20', '10:06', '', 'Kamadgiri Software Solutions', NULL),
+(2, 'HTML, CSS, JavaScript', '', '', '2026-02-05', '10:09', '', 'APSD Innovation Infotech Pvt. Ltd.', NULL),
+(3, 'HTML, CSS, JavaScript', '', '', '2026-02-12', '10:01', '', 'Arcane Programming Infotech', NULL),
+(4, 'HTML, CSS, JavaScript', '', '', '2026-02-20', '10:01', '', 'Mecatredz Technology Pvt Ltd Lucknow', NULL);
+
+
+
+
+ALTER TABLE `admins`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `company_info`
+--
+ALTER TABLE `company_info`
+  ADD PRIMARY KEY (`company_id`);
+
+--
+-- Indexes for table `comp_feedback`
+--
+ALTER TABLE `comp_feedback`
+  ADD PRIMARY KEY (`feedback_id`),
+  ADD KEY `survey_id` (`survey_id`),
+  ADD KEY `company_id` (`company_id`);
+
+--
+-- Indexes for table `events`
+--
+ALTER TABLE `events`
+  ADD PRIMARY KEY (`event_id`);
+
+--
+-- Indexes for table `faculty`
+--
+ALTER TABLE `faculty`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `file_info`
+--
+ALTER TABLE `file_info`
+  ADD PRIMARY KEY (`file_id`);
+
+--
+-- Indexes for table `file_log`
+--
+ALTER TABLE `file_log`
+  ADD PRIMARY KEY (`log_id`),
+  ADD KEY `file_id` (`file_id`);
+
+--
+-- Indexes for table `gallery`
+--
+ALTER TABLE `gallery`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `government_orders`
+--
+ALTER TABLE `government_orders`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `notices`
+--
+ALTER TABLE `notices`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `other_feedback`
+--
+ALTER TABLE `other_feedback`
+  ADD PRIMARY KEY (`feedback_id`),
+  ADD KEY `survey_id` (`survey_id`);
+
+--
+-- Indexes for table `placement`
+--
+ALTER TABLE `placement`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `placements`
+--
+ALTER TABLE `placements`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `placement_faculty`
+--
+ALTER TABLE `placement_faculty`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `session_ref`
+--
+ALTER TABLE `session_ref`
+  ADD PRIMARY KEY (`session_id`);
+
+--
+-- Indexes for table `staging_table`
+--
+ALTER TABLE `staging_table`
+  ADD PRIMARY KEY (`survey_id`),
+  ADD KEY `file_id` (`file_id`);
+
+--
+-- Indexes for table `student_data`
+--
+ALTER TABLE `student_data`
+  ADD PRIMARY KEY (`enrollment_no`);
+
+--
+-- Indexes for table `student_file_info`
+--
+ALTER TABLE `student_file_info`
+  ADD PRIMARY KEY (`file_id`);
+
+--
+-- Indexes for table `student_tech_map`
+--
+ALTER TABLE `student_tech_map`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `survey_id` (`survey_id`),
+  ADD KEY `tech_id` (`tech_id`);
+
+--
+-- Indexes for table `student_trainer_map`
+--
+ALTER TABLE `student_trainer_map`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `survey_id` (`survey_id`),
+  ADD KEY `trainer_id` (`trainer_id`);
+
+--
+-- Indexes for table `survey_tracker`
+--
+ALTER TABLE `survey_tracker`
+  ADD PRIMARY KEY (`survey_id`);
+
+--
+-- Indexes for table `trainer_dts`
+--
+ALTER TABLE `trainer_dts`
+  ADD PRIMARY KEY (`trainer_id`),
+  ADD UNIQUE KEY `name` (`name`);
+
+--
+-- Indexes for table `trainer_feedback`
+--
+ALTER TABLE `trainer_feedback`
+  ADD PRIMARY KEY (`feedback_id`),
+  ADD KEY `survey_id` (`survey_id`),
+  ADD KEY `trainer_id` (`trainer_id`),
+  ADD KEY `company_id` (`company_id`);
+
+--
+-- Indexes for table `training_dts`
+--
+ALTER TABLE `training_dts`
+  ADD PRIMARY KEY (`survey_id`),
+  ADD KEY `company_id` (`company_id`),
+  ADD KEY `file_id` (`file_id`);
+
+--
+-- Indexes for table `training_tech`
+--
+ALTER TABLE `training_tech`
+  ADD PRIMARY KEY (`tech_id`),
+  ADD UNIQUE KEY `technology_name` (`technology_name`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`enrollment_no`);
+
+--
+-- Indexes for table `workshops`
+--
+ALTER TABLE `workshops`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `admins`
+--
+ALTER TABLE `admins`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `company_info`
+--
+ALTER TABLE `company_info`
+  MODIFY `company_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
+-- AUTO_INCREMENT for table `comp_feedback`
+--
+ALTER TABLE `comp_feedback`
+  MODIFY `feedback_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=207;
+
+--
+-- AUTO_INCREMENT for table `events`
+--
+ALTER TABLE `events`
+  MODIFY `event_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `faculty`
+--
+ALTER TABLE `faculty`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `file_info`
+--
+ALTER TABLE `file_info`
+  MODIFY `file_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `file_log`
+--
+ALTER TABLE `file_log`
+  MODIFY `log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `gallery`
+--
+ALTER TABLE `gallery`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT for table `government_orders`
+--
+ALTER TABLE `government_orders`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `notices`
+--
+ALTER TABLE `notices`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `other_feedback`
+--
+ALTER TABLE `other_feedback`
+  MODIFY `feedback_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=207;
+
+--
+-- AUTO_INCREMENT for table `placement`
+--
+ALTER TABLE `placement`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `placements`
+--
+ALTER TABLE `placements`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `placement_faculty`
+--
+ALTER TABLE `placement_faculty`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `session_ref`
+--
+ALTER TABLE `session_ref`
+  MODIFY `session_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `staging_table`
+--
+ALTER TABLE `staging_table`
+  MODIFY `survey_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=207;
+
+--
+-- AUTO_INCREMENT for table `student_file_info`
+--
+ALTER TABLE `student_file_info`
+  MODIFY `file_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `student_tech_map`
+--
+ALTER TABLE `student_tech_map`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=352;
+
+--
+-- AUTO_INCREMENT for table `student_trainer_map`
+--
+ALTER TABLE `student_trainer_map`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=207;
+
+--
+-- AUTO_INCREMENT for table `trainer_dts`
+--
+ALTER TABLE `trainer_dts`
+  MODIFY `trainer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+
+--
+-- AUTO_INCREMENT for table `trainer_feedback`
+--
+ALTER TABLE `trainer_feedback`
+  MODIFY `feedback_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=207;
+
+--
+-- AUTO_INCREMENT for table `training_dts`
+--
+ALTER TABLE `training_dts`
+  MODIFY `survey_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=207;
+
+--
+-- AUTO_INCREMENT for table `training_tech`
+--
+ALTER TABLE `training_tech`
+  MODIFY `tech_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- AUTO_INCREMENT for table `workshops`
+--
+ALTER TABLE `workshops`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `comp_feedback`
+--
+ALTER TABLE `comp_feedback`
+  ADD CONSTRAINT `comp_feedback_ibfk_1` FOREIGN KEY (`survey_id`) REFERENCES `training_dts` (`survey_id`),
+  ADD CONSTRAINT `comp_feedback_ibfk_2` FOREIGN KEY (`company_id`) REFERENCES `company_info` (`company_id`);
+
+--
+-- Constraints for table `file_log`
+--
+ALTER TABLE `file_log`
+  ADD CONSTRAINT `file_log_ibfk_1` FOREIGN KEY (`file_id`) REFERENCES `file_info` (`file_id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `other_feedback`
+--
+ALTER TABLE `other_feedback`
+  ADD CONSTRAINT `other_feedback_ibfk_1` FOREIGN KEY (`survey_id`) REFERENCES `training_dts` (`survey_id`);
+
+--
+-- Constraints for table `staging_table`
+--
+ALTER TABLE `staging_table`
+  ADD CONSTRAINT `staging_table_ibfk_1` FOREIGN KEY (`file_id`) REFERENCES `file_info` (`file_id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `student_tech_map`
+--
+ALTER TABLE `student_tech_map`
+  ADD CONSTRAINT `student_tech_map_ibfk_1` FOREIGN KEY (`survey_id`) REFERENCES `training_dts` (`survey_id`),
+  ADD CONSTRAINT `student_tech_map_ibfk_2` FOREIGN KEY (`tech_id`) REFERENCES `training_tech` (`tech_id`);
+
+--
+-- Constraints for table `student_trainer_map`
+--
+ALTER TABLE `student_trainer_map`
+  ADD CONSTRAINT `student_trainer_map_ibfk_1` FOREIGN KEY (`survey_id`) REFERENCES `training_dts` (`survey_id`),
+  ADD CONSTRAINT `student_trainer_map_ibfk_2` FOREIGN KEY (`trainer_id`) REFERENCES `trainer_dts` (`trainer_id`);
+
+--
+-- Constraints for table `survey_tracker`
+--
+ALTER TABLE `survey_tracker`
+  ADD CONSTRAINT `survey_tracker_ibfk_1` FOREIGN KEY (`survey_id`) REFERENCES `training_dts` (`survey_id`);
+
+--
+-- Constraints for table `trainer_feedback`
+--
+ALTER TABLE `trainer_feedback`
+  ADD CONSTRAINT `trainer_feedback_ibfk_1` FOREIGN KEY (`survey_id`) REFERENCES `training_dts` (`survey_id`),
+  ADD CONSTRAINT `trainer_feedback_ibfk_2` FOREIGN KEY (`trainer_id`) REFERENCES `trainer_dts` (`trainer_id`),
+  ADD CONSTRAINT `trainer_feedback_ibfk_3` FOREIGN KEY (`company_id`) REFERENCES `company_info` (`company_id`);
+
+--
+-- Constraints for table `training_dts`
+--
+
+
