@@ -324,14 +324,14 @@ Government Girls Polytechnic Amethi | AICTE Approved | BTEUP Lucknow
   <div id="slider" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="images/college2.jpeg" class="d-block w-100">
+        <img src="images/college1.jpeg" class="d-block w-100">
       </div>
       <div class="carousel-item">
-        <img src="images/college3.jpeg" class="d-block w-100">
+        <img src="images/college2.jpeg" class="d-block w-100">
       </div>
-      <!-- <div class="carousel-item">
+       <div class="carousel-item">
         <img src="images/college1.jpeg" class="d-block w-100">
-      </div> -->
+      </div>
     </div>
   </div>
 </div>
